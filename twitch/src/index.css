@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+}
+.navbar {
+    background: #fff;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #eee;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 60px;
+    height: 60px;
+    margin-left: 25%;
+}
+.navbar .container .followEl {
+    margin-right: 10%;
+    margin-left: 10%;
+    cursor:pointer;
+}
+.navbar .container .browseEl {
+    cursor:pointer;
+}
+.followEl:hover {
+    color: #8205B4;
+}
+.browseEl:hover {
+    color: #8205B4;
+}
+.search .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .input {
+    padding: 10px 8px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+    background: #E5E5E5;
+    border: none;
+}
+.search .icon {
+    width: 35px;
+    text-align: center;
+    height: 36px;
+    background: #eee;
+    font-size: 25px;
+    border-radius: 3px;
+    outline: none;
+    margin-top: 0.2%;
+    border: none;
+}
+
+.fas {
+    margin-top: 20%;
+}
+.user {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.whisper{
+    margin: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+.whisper:hover {
+    background: #eee;
+}
+.env {
+    font-size: 18px;
+    padding: 10px;
+}
+.env:hover {
+    background: #eee;
+}
+.contain {
+    height: 5vh;
+    width: 100px;
+    background: #eee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.contain:hover {
+    background: #E5E5E5;
+}
+.person img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    color: #8205B4;
+    border-radius: 50%;
+}
+
+.dot {
+    background: #00F593;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 3;
+    left: 97.8%;
+    margin-top: 1.1%;
+}
+.loot {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    padding: 3px;
+}
+.loot:hover {
+    background: #E5E5E5;
+}
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background: #EFEFF1;
+    top: 9.0%;
+    position: fixed;
+    overflow-y: scroll;
+}
+.sidebar .channels {
+    margin: 10px;
+    font-size: 15px;
+}
+.sidebar .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:5%;
+    padding: 5px;
+}
+.sidebar .items img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.items:hover {
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+.more {
+    padding:10px;
+    margin-top: 2%;
+    font-size: 13px;
+    color: #8205B4;
+}
+.recommended {
+    padding: 5px;
+    margin-top: 4%;
+}
+.channel {
+    margin-top: 5%;
+}
+.channel img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -5%;
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch::before {
+    content: "";
+    background: red;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    display: block;
+}
+.div {
+    padding-left: 10px;
+}
+
+.div .recommend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.div .recommend:hover {
+    background: #E5E5E5;
+    cursor: pointer;
+}
+
+.body {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 10%;
+}
+.contents{
+    margin-top: 5%;
+    height: 100vh;
+    width: 65rem;
+    margin-left: 23%;
+}
+.contents .title {
+    font-size: 40px;
+    margin-top: 8%;
+}
+.contents .flexing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+.contents .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background:#8205B4;
+    margin-top: 3%;
+    width: 22%;
+    margin-left: -5%;
+    height: 3rem;
+    border-radius: 5px;
+}
+.contents .options .game {
+    color: #fff;
+}
+.contents .options .console {
+    margin-bottom: 5%;
+}
+.contents .selection {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5%;
+    margin-top:5%;
+}
+.selection .live:hover {
+    color: #8205B4;
+    cursor: pointer;
+}
+.category{
+    margin-right: 20px;
+}
+.category.active {
+    border-bottom: 3px solid #8205B4;
+    color: #8205B4;
+}
+.searchCategory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    margin-top: 2%;
+}
+.searchCategory .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchCategory .inputs .filter {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.enter {
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #c9c8c8;
+    border: none;
+    outline: none;
+}
+.searchCategory .inputs .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchCategory .sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchCategory .sort .filter {
+    margin-right: 10px;
+    font-size: 15px;
+}
+.searchCategory .sort .choose {
+    background: #c9c8c8;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+.down {
+    margin-top: 2.8%;
+    border: none;
+    background: #c9c8c8;
+    font-size: 15px;
+    outline: none;
+}
+.twitch {
+    margin-top: 3%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.twitch .img {
+    width: 200px;
+    height: 300px;
+    transition: all 400ms;
+}
+.twitch img:hover {
+    transform: scale(1.1);
+}
+.twitch .niche {
+    font-size: 15px;
+    margin-top: 5%;
+}
+.twitch .niche:hover {
+    color: #8205B4;
+    cursor: pointer;
+}
+.twitch .views {
+    margin-top: 3%;
+    font-size: 15px;
+    margin-bottom: 10%;
+    color: #9F9FA0;
+}
+.twitch .views:hover {
+    color: #8205B4;
+    cursor: pointer;
+}
